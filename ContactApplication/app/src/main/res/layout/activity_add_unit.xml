@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_unit_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:fitsSystemWindows="true">
+
+    <!-- Tên Đơn Vị -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unit Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_unit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Unit Name"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"/>
+
+    <!-- Số Điện Thoại -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_unit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Unit Phone Number"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:inputType="phone" />
+
+    <!-- Địa Chỉ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_unit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Unit Address"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"/>
+
+    <!-- Chức Vụ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_unit_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Unit Position"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"/>
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_unit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Unit Email"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:inputType="textEmailAddress" />
+
+    <!-- Nút Lưu -->
+    <Button
+        android:id="@+id/btn_save_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Unit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="25dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/purple_500"/>
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imv_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/relative_layout_detail"
+        android:src="@drawable/baseline_person_24" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_photo">
+
+        <TextView
+            android:id="@+id/txt_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic Information"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title1"
+            android:layout_marginTop="8dp"
+            android:text="ID:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_id"
+            android:layout_marginTop="8dp"
+            android:text="Name:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="8dp"
+            android:text="Address:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txt_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address"
+            android:layout_marginTop="8dp"
+            android:text="Position:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_position"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/design_default_color_primary"
+            android:text="Contact Information"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title2"
+            android:layout_marginTop="8dp"
+            android:text="Phone:"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_phone"
+            android:layout_marginTop="12dp"
+            android:text="Email:"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_content_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_id"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/txt_id"
+            android:text="textview"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_content_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_name"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/txt_name"
+            android:text="textview"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_content_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_address"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/txt_address"
+            android:text="textview"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txt_content_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_position"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/txt_position"
+            android:text="textview"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_content_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_phone"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txt_phone"
+            android:text="textview"
+            android:textSize="17dp"
+            android:autoLink="phone"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/txt_content_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_email"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txt_email"
+            android:text="textview"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="Update"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        android:layout_centerInParent="true"
+        android:onClick="backAtivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

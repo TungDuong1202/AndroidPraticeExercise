@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/update_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true">
+
+    <!-- Tên Nhân Viên -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_staff_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Staff Name"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"/>
+
+    <!-- Số Điện Thoại -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_staff_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Staff Phone Number"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:inputType="phone" />
+
+    <!-- Địa Chỉ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_staff_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Staff Address"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"/>
+
+    <!-- Chức Vụ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_staff_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Staff Position"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"/>
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_staff_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Staff Email"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:inputType="textEmailAddress" />
+
+    <!-- Nút Cập Nhật -->
+    <Button
+        android:id="@+id/btn_save_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="25dp"
+        android:padding="12dp" />
+</LinearLayout>

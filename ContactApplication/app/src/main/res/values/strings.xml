@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Contact Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="sort_options">
+        <item>Tên (A-Z)</item>
+        <item>Tên (Z-A)</item>
+    </string-array>
+    <string name="navigation_unit">Units</string>
+    <string name="navigation_staff">Staff</string>
+</resources>
